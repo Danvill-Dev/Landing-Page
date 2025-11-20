@@ -6,3 +6,5 @@ if($_REQUEST) {
     echo "</pre>";
     die();
 }
+
+?>
