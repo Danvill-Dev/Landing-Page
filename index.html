@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing Page</title>
+    <link rel="stylesheet" href="css/responsiv.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/fonte.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="title">
+            <h1>Eventos de</h1>
+            <h1>Guarulhos</h1>
+        </div>
+
+        <ul>
+            <a href="#"><li>Inicio</li></a>
+            <a href="#"><li>Divulgação</li></a>
+            <a href="#"><li>Eventos</li></a>
+            
+           
+        </ul>
+    </header>
+
+    <main>
+        <aside>
+            <h2>venha divulgar e conhecer os Eventos da cidade</h2>
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+            
+            <form action="index.php" method="post">
+                <input type="text" placeholder="nome">
+                <input type="em" placeholder="email">
+                <input type="submit" value="enviar" >
+            </form>
+        </aside>
+
+        <article>
+            <img src="./img/—Pngtree—vector illustration beautiful on grungy_5850115.png" alt="pipas-coloridas">
+        </article>
+    </main>
+
+    <style>
+        @media screen and (max-width: 660px){
+    header{
+        flex-direction: column;
+    }
+   
+    main{
+    flex-direction: column;
+    }
+    h2{
+    font-size: 38px;
+
+    }
+    form{
+    margin: 0 auto;
+    }
+    input{
+    align-self: center;
+    }
+    img{
+    display: none;
+    }
+    ul{
+        text-align: center;
+    }
+}
+    </style>
+</body>
+</html>
