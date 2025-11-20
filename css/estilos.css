@@ -35,6 +35,7 @@ a:hover{ /* esse hover é quando o mouse passar no link e ele mudar de cor   */
 li{
     display: inline-block;
     margin: 20px;
+    font-size: 20px;
 }
 h1{
     font-weight: 300;
