@@ -16,7 +16,7 @@ header{
 
 #logo{
     display: flex;
-    width: 200px;
+    width: 225px;
     
 }
 
@@ -26,10 +26,10 @@ header{
 
 }
 a{
-    color: rgb(224, 124, 124);
+    color: rgb(255, 255, 255);
 }
 a:hover{ /* esse hover é quando o mouse passar no link e ele mudar de cor   */
-    color: rgb(235, 222, 42);
+    color: rgb(218, 137, 15);
     transition: 0.3s all;
 }
 li{

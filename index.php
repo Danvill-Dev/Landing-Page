@@ -7,4 +7,3 @@ if($_REQUEST) {
     die();
 }
 
-?>
