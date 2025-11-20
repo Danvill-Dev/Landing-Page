@@ -5,5 +5,7 @@ if($_REQUEST) {
     print_r($_POST);
     echo "</pre>";
     die();
+}else{
+    echo "<p>Nenhum dado recebido.</p>";
 }
 
