@@ -1,5 +1,5 @@
  body{
-        background-color: rgb(43, 183, 226);
+        background: linear-gradient(to bottom, #1b4cd1c7,#feb47b);
         color:bisque;
         font-family: "Lexend";
         max-width: 1200px;
@@ -12,6 +12,12 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+#logo{
+    display: flex;
+    width: 200px;
+    
 }
 
 #title{
