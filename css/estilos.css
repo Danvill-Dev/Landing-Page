@@ -1,5 +1,5 @@
  body{
-        background: linear-gradient(to bottom, #1b4cd1c7,#feb47b);
+        background: linear-gradient(to bottom, #f7f6f0a1,#2090db,#e4f315);
         color:bisque;
         font-family: "Lexend";
         max-width: 1200px;
@@ -26,11 +26,13 @@ header{
 
 }
 a{
-    color: rgb(255, 255, 255);
+    color: rgb(110, 221, 188);
 }
 a:hover{ /* esse hover é quando o mouse passar no link e ele mudar de cor   */
     color: rgb(218, 137, 15);
-    transition: 0.3s all;
+    transition: 0.2s all;
+    border: 1px solid rgb(252, 168, 42);
+    border-radius: 20px;
 }
 li{
     display: inline-block;
