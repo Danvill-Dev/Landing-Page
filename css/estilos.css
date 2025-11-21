@@ -2,10 +2,9 @@
         background: linear-gradient(to bottom, #f7f6f0a1,#2090db,#e4f315);
         color:bisque;
         font-family: "Lexend";
-        max-width: 1200px;
+        max-width: 100%;
         margin: 0 auto;
         padding: 10px;
-
         }
 header{
     display: flex;
@@ -51,7 +50,7 @@ h2{
 main{
     display: flex;
     flex-direction: row;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 p{
