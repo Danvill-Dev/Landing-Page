@@ -56,13 +56,14 @@ h2{
 main{
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 p{
     line-height: 20px;
     max-width: 450px;
-    font-family: sans-serif;
+    
 }
 
 img{
@@ -104,13 +105,16 @@ input[type="submit"]:hover{
     header{
         flex-direction: column;
     }
-   
     main{
     flex-direction: column;
+    margin-top: 10px;
+    align-content: center;
     }
     h2{
-    font-size: 38px;
-
+    font-size: 35px;
+    }
+    p{
+    max-width: 350px;
     }
     form{
     margin: 0 auto;
@@ -119,9 +123,10 @@ input[type="submit"]:hover{
     align-self: center;
     }
     img{
-    display: none;
+    width: 380px;
     }
     ul{
-        text-align: center;
+        display: flex;
+        justify-content: center;
     }
 }
