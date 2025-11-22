@@ -1,16 +1,19 @@
  body{
         background: linear-gradient(to bottom, #f7f6f0a1,#2090db,#e4f315);
-        color:bisque;
+        color:rgb(243, 211, 190);
         font-family: "Lexend";
-        max-width: 1250px;
+        max-width: 100%;
         margin: 0 auto;
-        padding: 10px;
+        padding: 20px;
+        height: 100vh;
+        overflow: hidden;
         }
 header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 #logo{
@@ -29,12 +32,50 @@ strong{
     color: rgb(238, 101, 96);
     text-shadow: #3679dd 2px 2px 4px;
 }
-a{
+#btn-1{
+    margin-top: 20px;
+    height: 50px;
+    width: 250px;
+    background-color: rgb(247, 57, 57);
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    font-size: medium;
+} #btn1{
+    text-decoration: none;
+    color: antiquewhite;
+    font-family: 'Lexend';
+} #btn-1:hover{
+    transition: all 0.2s;
+    background-color: rgb(168, 30, 30);
+    
+}
+
+#btn-2{
+    flex-direction: row;
+    margin: 10px;
+    height: 50px;
+    width: 250px;
+    background-color: rgb(137, 190, 11);
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    font-size: medium;
+}#btn2{
+    text-decoration: none;
+    color: antiquewhite;
+    font-family: 'Lexend';
+} #btn-2:hover{
+    transition: all 0.2s;
+    background-color: rgb(96, 163, 20);
+}
+
+.navegação{
     color: rgb(101, 172, 150);
 }
-a:hover{ /* esse hover é quando o mouse passar no link e ele mudar de cor   */
+.navegação:hover{ /* esse hover é quando o mouse passar no link e ele mudar de cor   */
     color: rgb(218, 137, 15);
-    transition: 0.2s all;
+    transition: 0.3s all;
     border: 1px solid rgb(252, 168, 42);
     border-radius: 20px;
 }
@@ -51,21 +92,21 @@ h2{
     font-size: 40px;
     line-height: 35px;
     font-family: "lexend";
+     text-shadow: #5e91dd 2px 2px 4px;
 }
 
 main{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    justify-content: center;
 }
 
 p{
     line-height: 20px;
     max-width: 450px;
-    
+    text-shadow: 1px 2px 2px rgb(121, 116, 116);
 }
-
 img{
     display: flex;
     width: 550px;
@@ -73,60 +114,44 @@ img{
 }
 
 
-form{
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-}
-
-input{
-    margin-top: 20px;
-    height: 20px;
-    padding: 15px;
-    border-radius: 20px;
-    border: none;
-    font-size: 15px;
-
-}
-
-input[type="submit"]{
-    height: 50px;
-    width: 50%;
-    background-color: rgb(224, 124, 124);
-    color: antiquewhite;
-    font-weight: bold;
-}
-input[type="submit"]:hover{
-    background-color: blue;
-    transition: 0.2s all;
-}  
-
 @media screen and (max-width: 660px){
     header{
         flex-direction: column;
     }
     main{
     flex-direction: column;
-    margin-top: 10px;
+    margin-top: 5px;
     align-content: center;
+    justify-content: space-between;
     }
     h2{
     font-size: 35px;
     }
     p{
+    align-self: center;
     max-width: 350px;
     }
-    form{
-    margin: 0 auto;
-    }
-    input{
-    align-self: center;
+    #btn-1, #btn-2{
+    flex-direction: column;
+    width: 150px;
     }
     img{
-    width: 380px;
+        
+        width: 370px;
     }
     ul{
         display: flex;
         justify-content: center;
     }
+    li{
+    margin: 10px;
+    }
+
+   .navegação:hover{ /* esse hover é quando o mouse passar no link e ele mudar de cor   */
+    color: rgb(218, 137, 15);
+    transition: 0.2s all;
+    border: 1px solid rgb(252, 168, 42);
+    border-width: 5px;
+    
+}
 }
