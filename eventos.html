@@ -1,29 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="#">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
-     rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
-     crossorigin="anonymous">
+    <link rel="stylesheet" href="css/eventos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm bg-info navbar-light">
-    <a class="navbar-brand" href="#"><img src="./img/guarulhos-logo.png" alt="guarulhos-logo" width="220px"></a>
-    <ul class="navbar-nav">
-        <li class="nav-item">
-            <a class="nav-link" href="/index.html">Inicio</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="./cadastro.html">Cadastre-se</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="/eventos.html">Eventos</a>
-        </li>
-    </ul>
-    </nav>
-    
+    <header>
+        <div id="title">
+            <img id="logo" src="./img/guarulhos-logo.png" alt="guarulhos-logo">
+        </div>
+        <ul>
+            <a class="navegação" href="index.html"><li>Inicio</li></a>
+            <a class="navegação" href="./cadastro.html"><li>Cadastre-se</li></a>
+            <a class="navegação" href="./eventos.html"><li>Eventos</li></a>
+            
+           
+        </ul>
+    </header>
+    <main>
+        <section>
+            <h1>Eventos em Guarulhos</h1>
+            <p>Aqui você encontra uma lista dos próximos eventos na cidade de Guarulhos. Fique por dentro das atividades culturais, esportivas e comunitárias que acontecem perto de você!</p>
+            
+            <article class="eventos">
+                <h2>Festival de Música ao Vivo</h2>
+                <p>Data: 15 de Julho de 2024</p>
+                <p>Local: Parque Municipal</p>
+                <p>Descrição: Venha curtir uma noite de música ao vivo com bandas locais e food trucks.</p>
+            </article>
+
+            <article class="eventos">
+                <h2>Feira de Artesanato</h2>
+                <p>Data: 22 de Julho de 2024</p>
+                <p>Local: Centro Cultural</p>
+                <p>Descrição: Explore a criatividade local com artesãos exibindo suas obras únicas.</p>
+            </article>
+
+            <article class="eventos">
+                <h2>Caminhada Ecológica</h2>
+                <p>Data: 29 de Julho de 2024</p>
+                <p>Local: Reserva Natural</p>
+                <p>Descrição: Participe de uma caminhada guiada pela natureza e aprenda sobre a fauna e flora locais.</p>
+            </article>
+            <article class="eventos">
+                <h2>Oficina de Culinária</h2>
+                <p>Data: 5 de Agosto de 2024</p>
+                <p>Local: Escola de Gastronomia</p>
+                <p>Descrição: Aprenda a preparar pratos típicos da culinária brasileira com chefs experientes.</p>
+            </article>
+        </section>
+    </main>
+
 </body>
 </html>
