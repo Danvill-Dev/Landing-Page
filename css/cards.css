@@ -1,0 +1,73 @@
+body{
+    background-color: brown;
+    margin: 0 auto;
+    padding: 15px;
+    box-sizing: border-box;
+    }
+
+
+#caixa-card{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    gap: 20px;
+    overflow-x: auto;   /* habilita rolagem horizontal */
+    max-width: 960px;
+
+  /* Scroll Snap */
+  scroll-snap-type: x mandatory;
+
+  /* Personalização da barra */
+  scrollbar-width: thin;                /* Firefox */
+  scrollbar-color: #f35656 transparent;
+}
+
+.container::-webkit-scrollbar {
+  height: 3px; /* altura da barra horizontal */
+}
+
+.container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
+.container::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+
+
+.card{
+    background-color: rgb(163, 52, 32);
+    width: 300px;
+    height: 300px;
+    border: 2px solid rgb(94, 10, 10);
+    margin: auto;
+    box-shadow: 2px 5px 12px rgb(17, 10, 10);
+    border-radius: 10px;
+    flex-shrink: 0; /* impede que o card encolha */
+    scroll-snap-align: start;
+}
+ 
+img{
+    width: 280px;
+    height: 150px;
+    border: none;
+    margin: 10px;
+    border-radius: 5px;
+}
+h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+p{
+    
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
