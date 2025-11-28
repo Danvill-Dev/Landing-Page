@@ -49,7 +49,7 @@ font-size: 18px;
         
 .card {
     min-width: 300px;    /* Largura fixa pro carrossel funcionar */
-    border: 2px solid black; /* Borda grossa estilo iniciante */
+    border: 2px solid black; /* Borda grossa estilo  */
     padding: 10px;
     border:none;
     background-color: rgba(199, 92, 92, 0.863);
