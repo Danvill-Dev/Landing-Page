@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eventos</title>
-    <link rel="stylesheet" href="./css/card.css">
+    <title>Eventos de Cabrobó</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/card.css">
 </head>
 <body>
 
     <header>
-        <h1>Eventos de Cabroro</h1>
+        <h1>Eventos de Cabrobó</h1>
         <ul>
-            <a class="navegação" href="index.html"><li>Inicio</li></a>
-            <a class="navegação" href="./cadastro.html"><li>Cadastre-se</li></a>
-            <a class="navegação" href="./eventosbts.html"><li>Eventos</li></a>
+            <li><a class="navegação" href="index.html">Inicio</a></li>
+            <li><a class="navegação" href="organizadores.html">Cadastre-se</a></li>
+            <li><a class="navegação" href="eventosbts.html">Eventos</a></li>
         </ul>
     </header>
 
@@ -28,100 +29,142 @@
             <h4>Escolha o tipo de evento:</h4>
             <button class="btn btn-primary" onclick="filtrarEventos('todos')">Ver Tudo</button>
             <button class="btn btn-secondary" onclick="filtrarEventos('show')">Shows</button>
-            <button class="btn btn-secondary" onclick="filtrarEventos('esporte')">Esportes</button>
+            <button class="btn btn-secondary" onclick="filtrarEventos('esporte')">Esporte</button>
             <button class="btn btn-secondary" onclick="filtrarEventos('cultura')">Cultura</button>
+            <button class="btn btn-secondary" onclick="filtrarEventos('gastronomia')">Gastronomia</button> 
         </div>
 
         <p class="text-muted text-center">Arraste para o lado para ver mais</p>
 
-        <div id="area-dos-eventos">
+        <div id="evento">
 
             <div id="e1" class="card">
-                <span class="categoria-label">SHOW</span>
-                <img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&w=500&q=60" alt="Foto">
+                <span class="tipos">SHOW</span>
+                <img src="./img/rock.jpg" alt="festival de rock">
                 <h3>Festival de Rock</h3>
                 <p>Data: 20/12</p>
-                <button class="btn btn-success btn-sm">Ver info</button>
+                <p>Venha participar do maior festival de musica da américa latina, com bandas nacionais e internacionais, muita comida boa e diversão para toda a família.</p>
+                <button class="btn btn-success btn-sm">mais info</button>
             </div>
 
             <div id="e2" class="card">
-                <span class="categoria-label">GASTRONOMIA</span>
-                <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=500&q=60" alt="Foto">
-                <h3>Food Trucks</h3>
+                <span class="tipos">GASTRONOMIA</span>
+                <img src="./img/culinaria.png" alt="gente cozinhando">
+                <h3>Feira gastronomica</h3>
                 <p>Data: 21/12</p>
-                <button class="btn btn-success btn-sm">Ver info</button>
+                <p>Aproveite conosco essa grande feira gastronomica que vai acontecer pela primerva vez na nossa cidade!</p>
+                <button class="btn btn-success btn-sm">Mais info</button>
             </div>
 
             <div id="e3" class="card">
-                <span class="categoria-label">ESPORTE</span>
-                <img src="https://images.unsplash.com/photo-1552674605-469523fb54fa?auto=format&fit=crop&w=500&q=60" alt="Foto">
-                <h3>Corrida 5K</h3>
+                <span class="tipos">ESPORTE</span>
+                <img src="./img/corrida.jpg" alt="corrida">
+                <h3>Corrida 4K</h3>
                 <p>Data: 15/01</p>
-                <button class="btn btn-success btn-sm">Ver info</button>
+                <p>Vamos fazer parte dessa corrida para todas as idades nos arredores da cidade e com brindes aos participantes.</p>
+                <button class="btn btn-success btn-sm">Mais info</button>
             </div>
 
-            <div id="e4" class="card">
-                <span class="categoria-label">CULTURA</span>
-                <img src="https://images.unsplash.com/photo-1536237243936-3944696118b6?auto=format&fit=crop&w=500&q=60" alt="Foto">
-                <h3>Teatro Municipal</h3>
+         <div id="e4" class="card">
+                <span class="tipos">CULTURA</span>
+                <img src="./img/teatro.webp" alt="teatro">
+                <h3>Teatro Municipal - O Cortiço</h3>
                 <p>Data: 10/12</p>
-                <button class="btn btn-success btn-sm">Ver info</button>
+                <p>Venha prestigiar a peça baseada no livro de um grande escritor brasileiro, apenas 300 ingressos Disponiveis.</p>
+                <button class="btn btn-success btn-sm">Mais info</button>
             </div>
-
-            <div id="e5" class="card">
-                <span class="categoria-label">SHOW</span>
-                <img src="./img/festival.png" alt="festival">
-                <h3>Festival de musica</h3>
-                <p>Data: 12/12</p>
-                <button class="btn btn-success btn-sm">Ver info</button>
-            </div>
-
-        </div> 
-        </div>
-
-    <script>
-        function filtrarEventos(categoria) {
             
+            <div id="e5" class="card">
+                <span class="tipos">SHOW</span>
+                <img src="./img/fest.jpg" alt="festival">
+                <h3>Festival de musica eletronica</h3>
+                <p>Data: 12/12</p>
+                <p>Pela primeira vez o festival será realizado na cidade de Cabrobó, e conta com investimento de <strong>2 milhões</strong></p>
+                <button class="btn btn-success btn-sm">Mais info</button>
+            </div>
+            
+            <div id="e6" class="card">
+                   <span class="tipos">CULTURA</span>
+                   <img src="./img/artesanato.png" alt="teatro">
+                   <h3>Artesanato</h3>
+                   <p>Data: 20/12</p>
+                   <p>Havera uma grande feira de venda de artesanatos próximo ao centro da cidade.</p>
+                   <button class="btn btn-success btn-sm">Mais info</button>
+               </div>
+        </div> 
+        
+    </div> 
+        <script>
+        function filtrarEventos(categoria) {
             var evento1 = document.getElementById('e1'); 
             var evento2 = document.getElementById('e2'); 
             var evento3 = document.getElementById('e3'); 
             var evento4 = document.getElementById('e4'); 
             var evento5 = document.getElementById('e5'); 
+            var evento6 = document.getElementById('e6'); 
 
-    
-            if(categoria == 'todos') {
+           if(categoria == 'todos') {
                 evento1.style.display = "block";
                 evento2.style.display = "block";
                 evento3.style.display = "block";
                 evento4.style.display = "block";
                 evento5.style.display = "block";
+                evento6.style.display = "block";
               }if(categoria == 'show') {
                   evento1.style.display = "block"; 
                   evento2.style.display = "none";  
                   evento3.style.display = "none";
                   evento4.style.display = "none";
                    evento5.style.display = "block"; 
+                   evento6.style.display = "none"; 
                 }if(categoria == 'esporte') {
                    evento1.style.display = "none";
                    evento2.style.display = "none";
                    evento3.style.display = "block"; 
                    evento4.style.display = "none";
                    evento5.style.display = "none";
+                   evento6.style.display = "none";
                   }if(categoria == 'cultura') {
                      evento1.style.display = "none";
                      evento2.style.display = "none";
                      evento3.style.display = "none";
                      evento4.style.display = "block"; 
                      evento5.style.display = "none";
+                     evento6.style.display = "block";
                     }if(categoria == 'gastronomia') {
                        evento1.style.display = "none";
                        evento2.style.display = "block"; 
                        evento3.style.display = "none";
                        evento4.style.display = "none";                         
                        evento5.style.display = "none";
+                       evento6.style.display = "none";
                       }
         }
-    </script>
+        </script> 
+    <style>
+       @media (max-width: 768px) {
+            
+            header {
+                
+                flex-direction: column; 
+                gap: 12px;
+            }
 
+            ul {
+                
+                justify-content: center;
+                width: 100%;
+                flex-wrap: wrap;
+            }
+
+            h1 {
+                font-size: 24px; 
+            }
+            .mb-3.text-center button {
+                margin: 2px;
+            }
+        }
+
+    </style>
 </body>
 </html>

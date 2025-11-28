@@ -77,10 +77,10 @@ strong{
 .navegação{
     color: rgb(101, 172, 150);
 }
-.navegação:hover{ /* esse hover é quando o mouse passar no link e ele mudar de cor   */
+.navegação:hover{ 
     color: rgb(218, 137, 15);
     transition: 0.3s all;
-    border: 1px solid rgb(252, 168, 42);
+   
     border-radius: 20px;
 }
 li{

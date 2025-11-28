@@ -1,81 +1,90 @@
 
-body {
-    font-family: 'Lexend';
-    background: linear-gradient(to bottom, #f7f6f0a1,#2090db,#e4f315);
-    max-height: 100vh;
-    padding: 15px;
-    margin: 0;
+body{
+font-family: 'Lexend', sans-serif;
+background: linear-gradient(to bottom, #f7f6f0, #2090db, #e4f315);
+min-height: 100vh; 
+padding: 15px;
+margin: 0;
 }
 
 header {
-    background-color: #ebe4e400;
+    background-color: transparent;
     color: rgb(17, 60, 109);
     padding: 20px;
     text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
+    align-items: center;
 }
+
 ul {
     display: flex;
     justify-content: end;
     list-style-type: none;
     gap: 10px;
     margin-top: 20px;
+    padding: 0;
 }
-.navegação{
-color: rgb(101, 172, 150);
-text-decoration: none;
-margin-right: 20px;
-font-size: 18px;
+
+.navegação {
+    color: rgb(101, 172, 150);
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: bold;
 }
-    .navegação:hover{
-        color: rgb(218, 137, 15);
-        transition: 0.3s all;
-        border: 1px solid rgb(252, 168, 42);
-        border-radius: 10px;
-    }
+
+
+        .navegação:hover {
+            color: rgb(218, 137, 15);
+            transition: 0.3s all;
+           
+            border-radius: 10px;
+            padding: 5px; 
+        }
 
         
-#area-do-eventos {
-    display: flex;       
-    overflow-x: auto;    
-    padding: 20px;
-     gap: 20px;
-    background-color: #ffffff00;
-    }
-
+        #evento {
+            display: flex;       
+            overflow-x: auto;    
+            padding: 20px;
+            gap: 20px;
+            background-color: transparent;
+            scroll-behavior: smooth;
+            scrollbar-color: rgb(234, 255, 113) transparent;
+            scrollbar-width: thin;
+        }
         
-.card {
-    min-width: 300px;    /* Largura fixa pro carrossel funcionar */
-    border: 2px solid black; /* Borda grossa estilo  */
-    padding: 10px;
-    border:none;
-    background-color: rgba(199, 92, 92, 0.863);
-    text-align: center;
-    border-radius: 15px;
-    box-shadow: 2px 4px 12px black;
+        .card {
+            min-width: 300px;    
+            border: 1px solid rgba(54, 54, 54, 0); 
+            padding: 10px;
+            background-color: rgba(228, 236, 250, 0.562);
+            text-align: center;
+            border-radius: 15px;
         }
 
         .card img {
             width: 100%;
             height: 180px;
             object-fit: cover;
-            border: 1px solid #ccc;
-            border:none;
+            border: none;
             border-radius: 15px;
+            margin-bottom: 10px;
+            
         }
 
         h3 {
             font-size: 18px;
-            color: #000;
+            color: black;
         }
 
-        .categoria-label {
+        .tipos {
             background-color: #a7a3a3;
             padding: 5px;
             display: inline-block;
             margin-bottom: 5px;
             font-weight: bold;
+            border-radius: 5px;
         }
