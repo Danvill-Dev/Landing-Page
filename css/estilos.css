@@ -155,9 +155,8 @@ img{
 
    .navegação:hover{ 
     color: rgb(218, 137, 15);
-    transition: 0.3s all;
-    border: 1px solid rgb(252, 168, 42);
-    
-    
-}
+    transition: 0.2s all;
+    border-radius: 20px;
+    border-bottom:2px solid rgb(218, 137, 15);
+    }
 }
