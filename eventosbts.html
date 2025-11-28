@@ -1,47 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/cards.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
-     rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
-     crossorigin="anonymous">
+    <title>Eventos</title>
+    <link rel="stylesheet" href="./css/card.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <a class="navegação" href="index.html"><li>Inicio</li></a>
-        <a class="navegação" href="./organizadores.html"><li>Cadastre-se</li></a>
-        <a class="navegação" href="./eventosbts.html"><li>Eventos</li></a>
-    </nav>
-    <main id="caixa-card">
-        <div class="card">
-            <img src="./img/festival.png" alt="festival">
-            <h1>festival de musica</h1>
-            <p>Venha participar do maior festival de musica da américa latina, com bandas nacionais e internacionais, muita comida boa e diversão para toda a família.</p>
+
+    <header>
+        <h1>Eventos de Cabroro</h1>
+        <ul>
+            <a class="navegação" href="index.html"><li>Inicio</li></a>
+            <a class="navegação" href="./cadastro.html"><li>Cadastre-se</li></a>
+            <a class="navegação" href="./eventosbts.html"><li>Eventos</li></a>
+        </ul>
+    </header>
+
+    <div class="container mt-4">
+        
+        <div class="mb-3 text-center">
+            <h4>Escolha o tipo de evento:</h4>
+            <button class="btn btn-primary" onclick="filtrarEventos('todos')">Ver Tudo</button>
+            <button class="btn btn-secondary" onclick="filtrarEventos('show')">Shows</button>
+            <button class="btn btn-secondary" onclick="filtrarEventos('esporte')">Esportes</button>
+            <button class="btn btn-secondary" onclick="filtrarEventos('cultura')">Cultura</button>
         </div>
-        <div class="card">
-            <img src="./img/festival.png" alt="festival">
-            <h1>festival de musica</h1>
-            <p>Venha participar do maior festival de musica da américa latina, com bandas nacionais e internacionais, muita comida boa e diversão para toda a família.</p>
+
+        <p class="text-muted text-center">Arraste para o lado para ver mais</p>
+
+        <div id="area-dos-eventos">
+
+            <div id="e1" class="card">
+                <span class="categoria-label">SHOW</span>
+                <img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&w=500&q=60" alt="Foto">
+                <h3>Festival de Rock</h3>
+                <p>Data: 20/12</p>
+                <button class="btn btn-success btn-sm">Ver info</button>
+            </div>
+
+            <div id="e2" class="card">
+                <span class="categoria-label">GASTRONOMIA</span>
+                <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=500&q=60" alt="Foto">
+                <h3>Food Trucks</h3>
+                <p>Data: 21/12</p>
+                <button class="btn btn-success btn-sm">Ver info</button>
+            </div>
+
+            <div id="e3" class="card">
+                <span class="categoria-label">ESPORTE</span>
+                <img src="https://images.unsplash.com/photo-1552674605-469523fb54fa?auto=format&fit=crop&w=500&q=60" alt="Foto">
+                <h3>Corrida 5K</h3>
+                <p>Data: 15/01</p>
+                <button class="btn btn-success btn-sm">Ver info</button>
+            </div>
+
+            <div id="e4" class="card">
+                <span class="categoria-label">CULTURA</span>
+                <img src="https://images.unsplash.com/photo-1536237243936-3944696118b6?auto=format&fit=crop&w=500&q=60" alt="Foto">
+                <h3>Teatro Municipal</h3>
+                <p>Data: 10/12</p>
+                <button class="btn btn-success btn-sm">Ver info</button>
+            </div>
+
+            <div id="e5" class="card">
+                <span class="categoria-label">SHOW</span>
+                <img src="./img/festival.png" alt="festival">
+                <h3>Festival de musica</h3>
+                <p>Data: 12/12</p>
+                <button class="btn btn-success btn-sm">Ver info</button>
+            </div>
+
+        </div> 
         </div>
-        <div class="card">
-            <img src="./img/festival.png" alt="festival">
-            <h1>festival de musica</h1>
-            <p>Venha participar do maior festival de musica da américa latina, com bandas nacionais e internacionais, muita comida boa e diversão para toda a família.</p>
-        </div>
-        <div class="card">
-            <img src="./img/festival.png" alt="festival">
-            <h1>festival de musica</h1>
-            <p>Venha participar do maior festival de musica da américa latina, com bandas nacionais e internacionais, muita comida boa e diversão para toda a família.</p>
-        </div>
-        <div class="card">
-            <img src="./img/festival.png" alt="festival">
-            <h1>festival de musica</h1>
-            <p>Venha participar do maior festival de musica da américa latina, com bandas nacionais e internacionais, muita comida boa e diversão para toda a família.</p>
-        </div>
-        </main>
+
+    <script>
+        function filtrarEventos(categoria) {
+            
+            var evento1 = document.getElementById('e1'); 
+            var evento2 = document.getElementById('e2'); 
+            var evento3 = document.getElementById('e3'); 
+            var evento4 = document.getElementById('e4'); 
+            var evento5 = document.getElementById('e5'); 
+
     
+            if(categoria == 'todos') {
+                evento1.style.display = "block";
+                evento2.style.display = "block";
+                evento3.style.display = "block";
+                evento4.style.display = "block";
+                evento5.style.display = "block";
+            }
+            if(categoria == 'show') {
+                evento1.style.display = "block"; // mostra
+                evento2.style.display = "none";  // esconde
+                evento3.style.display = "none";
+                evento4.style.display = "none";
+                evento5.style.display = "block"; // mostra
+            }
+
+
+            if(categoria == 'esporte') {
+                evento1.style.display = "none";
+                evento2.style.display = "none";
+                evento3.style.display = "block"; // mostra
+                evento4.style.display = "none";
+                evento5.style.display = "none";
+            }
+
+            if(categoria == 'cultura') {
+                evento1.style.display = "none";
+                evento2.style.display = "none";
+                evento3.style.display = "none";
+                evento4.style.display = "block"; // mostra
+                evento5.style.display = "none";
+            }
+            if(categoria == 'gastronomia') {
+                evento1.style.display = "none";
+                evento2.style.display = "block"; // mostra
+                evento3.style.display = "none";
+                evento4.style.display = "none";
+                evento5.style.display = "none";
+            }
+        }
+    </script>
+
 </body>
 </html>
