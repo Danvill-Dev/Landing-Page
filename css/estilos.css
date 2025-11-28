@@ -76,16 +76,18 @@ strong{
 
 .navegação{
     color: rgb(101, 172, 150);
+    font-size: 18px;
+    font-weight: bold;
 }
 .navegação:hover{ 
     color: rgb(218, 137, 15);
-    transition: 0.3s all;
-   
+    transition: 0.2s all;
     border-radius: 20px;
+    border-bottom:2px solid rgb(218, 137, 15);
 }
 li{
     display: inline-block;
-    margin: 35px;
+    margin: 30px;
     font-size: 20px;
 }
 h1{
@@ -94,7 +96,7 @@ h1{
 }
 h2{
     font-size: 40px;
-    line-height: 35px;
+    line-height: 45px;
     font-family: "lexend";
      text-shadow: #5e91dd 2px 2px 4px;
 }
